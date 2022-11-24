@@ -1,7 +1,7 @@
-from infra.repositories.income_respository import IncomeRepository
-from dtos.create_income_dto import CreateIncomeDto
-from dtos.get_income_dto import GetIncomeDTO
-from entities.income_entity_serializer import IncomeEntitySerializer
+from income.infra.repositories.income_respository import IncomeRepository
+from income.domain.dtos.create_income_dto import CreateIncomeDto
+from income.domain.dtos.get_income_dto import GetIncomeDTO
+from income.domain.entities.income_entity_serializer import IncomeEntitySerializer
 from rest_framework.response import Response
 from rest_framework import status
 

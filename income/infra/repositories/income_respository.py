@@ -3,8 +3,8 @@ from http.client import BAD_REQUEST
 
 from django.contrib.auth.models import User
 from django.core.exceptions import ObjectDoesNotExist
-from domain.entities.income_entity import IncomeEntity
-from domain.dtos.create_income_dto import CreateIncomeDto
+from income.domain.entities.income_entity import IncomeEntity
+from income.domain.dtos.create_income_dto import CreateIncomeDto
 
 
 class IncomeRepository:

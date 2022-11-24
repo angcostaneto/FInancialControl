@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from income_entity import IncomeEntity
+from income.domain.entities.income_entity import IncomeEntity
 
 class IncomeEntitySerializer(serializers.ModelSerializer):
   class Meta:

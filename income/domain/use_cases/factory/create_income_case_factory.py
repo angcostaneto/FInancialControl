@@ -1,6 +1,6 @@
 from income.domain.dtos.create_income_dto import CreateIncomeDto
-from infra.repositories.income_respository import IncomeRepository
-from use_cases.create_income_case import CreateIncomeCase
+from income.infra.repositories.income_respository import IncomeRepository
+from income.domain.use_cases.create_income_case import CreateIncomeCase
 
 def create_income_case_factory(income: CreateIncomeDto):
   income_repository = IncomeRepository()

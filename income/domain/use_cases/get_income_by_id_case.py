@@ -1,4 +1,4 @@
-from infra.repositories.income_respository import IncomeRepository
+from income.infra.repositories.income_respository import IncomeRepository
 from dtos.get_income_dto import GetIncomeDTO
 
 class GetIncomeByIdCase:
