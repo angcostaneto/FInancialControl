@@ -15,12 +15,9 @@ class IncomeRepository:
             return None
 
     def create_income(self, income: CreateIncomeDto):
-        try:
-            return IncomeEntity.objects.create(
-                value = Decimal(income.value), 
-                user = income.user)
-        except BAD_REQUEST:
-            return None
+        return IncomeEntity.objects.create(
+            value = Decimal(income.value), 
+            user = income.user)
 
     def delete_income(self, reference):
         try:

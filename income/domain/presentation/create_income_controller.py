@@ -8,7 +8,7 @@ from income.domain.use_cases.factory.create_income_case_factory import create_in
 def create_income_controller(http_request: request):
   incomeData = CreateIncomeDto(
     value = http_request.data.get('value'),
-    user = http_request.user.id
+    user = http_request.data.get('user')
   )
   
   return create_income_case_factory(incomeData)
