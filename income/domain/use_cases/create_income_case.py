@@ -12,7 +12,7 @@ class CreateIncomeCase:
     self._repository = repository
 
   def execute(self, income: CreateIncomeDto) -> GetIncomeDTO:
-    serializer = IncomeEntitySerializer(income)
+    serializer = IncomeEntitySerializer(data=income.__dict__)
     if serializer.is_valid():
       self._repository.create_income(income)
       return Response(serializer.data, status=status.HTTP_201_CREATED)
